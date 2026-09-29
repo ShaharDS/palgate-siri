@@ -1,0 +1,23 @@
+# Secrets & personal config: never commit
+functions/.env
+functions/.env.*
+!functions/.env.example
+.firebaserc
+tools/SECRETS.local.txt
+**/link_qr.png
+LOCAL-NOTES.md
+archive/
+
+# Dependencies & build output
+functions/node_modules/
+functions/lib/
+tools/.venv/
+**/__pycache__/
+.firebase/
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

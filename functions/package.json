@@ -1,0 +1,21 @@
+{
+  "name": "palgate-functions",
+  "description": "Cloud Functions that open a PalGate gate from an Apple Shortcut / Siri.",
+  "license": "GPL-3.0-only",
+  "engines": { "node": "20" },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node --test test/",
+    "deploy": "firebase deploy --only functions"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.3.0",
+    "firebase-functions": "^5.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@types/node": "^20.14.0"
+  },
+  "private": true
+}
